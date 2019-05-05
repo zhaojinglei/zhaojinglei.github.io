@@ -52,7 +52,7 @@
             </div>
             <!-- <audio src="./卓文萱 _ 曹格 - 梁山伯与茱丽叶.mp3" autoplay="autoplay" loop></audio> -->
             <!-- <audio src="http://www.ytmp3.cn/down/34716.mp3" autoplay="autoplay" loop></audio> -->
-            <audio controls autoplay="autoplay" loop="loop">
+            <audio   loop="loop">
                 <source src="http://www.ytmp3.cn/down/34716.mp3" type="audio/mpeg">
             </audio>
             
@@ -118,6 +118,8 @@
         var hold = 1;
 
         canvas.click(function(e) {
+            var audio = document.querySelector("audio");
+            audio .play();
             var offset = canvas.offset(), x, y;
             x = e.pageX - offset.left;
             y = e.pageY - offset.top;
